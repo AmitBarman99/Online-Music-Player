@@ -1,0 +1,146 @@
+/*
+Music Player
+Design & Developed by Amit Barman
+github : https://github.com/AmitBarman99
+*/
+
+*{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    position: relative;
+
+}
+.container{
+    width: 400px;
+    height: 360px;
+    margin: auto;
+    margin-top: -1.5em;
+    background: linear-gradient(100deg,sienna,rosybrown,#dab2eb);
+    padding: 10px;
+    padding-top: 25px;
+    border-radius: 40px;
+
+}
+.img{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#img{
+    width: 200px;
+}
+.box{
+    width:90%;
+    height: 80%;
+    margin: 20px auto;
+    padding: 16px 0px;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+}
+.circle-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    column-gap: 100px;
+    top: -30px;
+    z-index: 10;
+}
+
+.circle img{
+    border: 2px solid white;
+    width: 130px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(5, 5, 5);
+}
+#circle1{
+    animation: rotation1 2.5s infinite linear;
+
+}
+#circle2{
+    animation: rotation2 2.5s infinite linear;
+
+}
+@keyframes rotation1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes rotation2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+
+.switch-box{
+    margin: 30px auto;
+    width: 90%;
+    justify-content: center;
+    border-radius: 30px;
+}
+.box-two{
+    display: flex;
+    flex-direction: column;
+}
+.switch{
+    display: flex;
+    
+}
+.sw{
+    border: 1px solid white;
+    width: 100%;
+    padding: 0px 0px;
+    position: relative;
+    margin: auto 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px black;
+    
+}
+.sw span{
+    width: 30px;
+    font-size: 40px;
+    line-height: 1.5;
+    padding: 26px;
+    padding: 2px 141px;
+    cursor: pointer;
+}
+.mid{
+    background: linear-gradient(90deg,white,peru,sienna, chocolate,sienna,peru,white);
+}
+/* .fas-b{
+    background: linear-gradient(90deg, chocolate,sienna,peru,white);
+    
+}
+.fas-f{
+    background: linear-gradient(-90deg, chocolate,sienna,peru,white);
+    
+} */
+
+#canvas{
+    height: 229px;
+    width: 100%;
+    margin: auto;
+    border-radius: 7px;
+    margin-top: -186px;
+}
+#thefile{
+    margin: auto;
+    margin-bottom: -20px;
+}
+#pause-icon{
+    width: 30px;
+    height: 40px;
+}
+#play-icon{
+    height: 30pc;
+}
