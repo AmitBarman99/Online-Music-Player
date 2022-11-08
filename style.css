@@ -57,11 +57,11 @@ github : https://github.com/AmitBarman99
 }
 #circle1{
     animation: rotation1 2.5s infinite linear;
-
+    animation-delay: 0.1s;
 }
 #circle2{
     animation: rotation2 2.5s infinite linear;
-
+    animation-delay: 0.1s;
 }
 @keyframes rotation1 {
     0%{

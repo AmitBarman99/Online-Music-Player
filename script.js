@@ -1,5 +1,8 @@
 // Music player 
 //design and develop by Amit Barman
+const playbtn=document.querySelector('.mid');
+const circleAnemation1=document.querySelector('.circle1');
+const circleAnemation2=document.querySelector('.circle2');
 
 window.onload = function() {
   
@@ -60,17 +63,29 @@ window.onload = function() {
           x += barWidth + 1;
         }
       }
-  
+      
       audio.play();
       renderFrame();
+      setWheelanimation();
     };
   };
 
-function playPause(){
-  if(audio.paused){
-    audio.play();
-  }else{
-    audio.pause();
-    
+
+  function playPause(){
+    if(audio.paused){
+      audio.play();
+      setWheelanimation();
+    }else{
+      audio.pause();
+      removeWheelanimation();
+    }
   }
-}
+  
+  function setWheelanimation(){
+    circleAnemation1.setAttribute('id','circle1');
+    circleAnemation2.setAttribute('id','circle2');
+  }
+  function removeWheelanimation(){
+    circleAnemation1.removeAttribute('id','circle1');
+    circleAnemation2.removeAttribute('id','circle2');
+  }
